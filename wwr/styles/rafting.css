@@ -46,6 +46,10 @@ article {
     text-decoration: none;
 }
 
+.socialmedia a img {
+    width: 30px;
+}
+
 .hero {
     position: relative;
 }
@@ -81,7 +85,8 @@ article {
     margin: 10px;
 }
 
-/* header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-} */
+section h2 {
+    background-color: var(--accent2-color);
+    padding: 10px;
+    width: auto;
+}
