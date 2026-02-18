@@ -27,7 +27,20 @@ footer {
     background-color: var(--primary-color);
 }
 
-header.grid {}
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: var(--accent1-color);
+    padding: 12px 20px;
+    gap: 20px;
+}
+
+header img {
+    display: block;
+    width: 90px;
+    height: auto;
+    border-radius: 4px;
+}
 
 h1,
 h2 {
