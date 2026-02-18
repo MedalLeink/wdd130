@@ -467,3 +467,330 @@ footer p {
 main {
     color: var(--secondary-color);
 }
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 20px 16px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    opacity: 0.85;
+    font-size: 2rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #f0f0f0;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    background-color: transparent;
+    color: var(--secondary-color);
+    padding: 0 0 10px 0;
+}
+
+.newsletter > p {
+    color: var(--accent1-color);
+    margin: 0 auto 20px;
+    max-width: 500px;
+    padding: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.newsletter-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+}
+
+.newsletter-field label {
+    font-size: 0.9rem;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+.newsletter-field input {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-family: var(--body-font);
+    border: 1px solid var(--accent1-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    width: 220px;
+}
+
+.newsletter-field input:focus {
+    outline: 2px solid var(--accent2-color);
+}
+
+.newsletter-form button[type="submit"] {
+    padding: 10px 32px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.newsletter-form button[type="submit"]:hover {
+    background-color: var(--accent2-color);
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: var(--accent1-color);
+    padding: 36px 20px;
+    text-align: center;
+}
+
+.cta-content h2 {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0 0 12px 0;
+    font-size: 1.6rem;
+}
+
+.cta-content p {
+    color: var(--primary-color);
+    margin: 0 auto 20px;
+    max-width: 540px;
+    padding: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.cta-btn:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+/* Offerings Section - CSS Grid */
+.offerings {
+    padding: 30px 20px;
+}
+
+.offerings h2 {
+    background-color: transparent;
+    color: var(--secondary-color);
+    padding: 0 0 20px 0;
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.offering-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 16px;
+}
+
+.offering-card--reverse {
+    direction: rtl;
+}
+
+.offering-card--reverse > * {
+    direction: ltr;
+}
+
+.offering-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.offering-text h3 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.offering-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--accent1-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* =====================
+   TRIPS PAGE ADDITIONS
+   ===================== */
+
+/* Page hero - not full image, just a styled heading block */
+.page-hero {
+    background-color: var(--accent1-color);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.page-hero h1 {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0 0 8px 0;
+    font-size: 2rem;
+}
+
+.page-hero p {
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Trips CTA bar */
+.trips-cta {
+    background-color: #f0f0f0;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trips-cta p {
+    margin: 0;
+    padding: 0;
+    color: var(--accent1-color);
+    font-size: 0.95rem;
+}
+
+/* Trip cards - CSS Grid */
+.trips-section {
+    padding: 24px 20px;
+}
+
+.trips-section h2 {
+    background-color: transparent;
+    color: var(--secondary-color);
+    padding: 0 0 20px 0;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.trip-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.trip-info {
+    padding: 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.trip-info h3 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.trip-info p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--accent1-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Trips Table */
+.trips-table-section {
+    padding: 24px 20px 32px;
+    background-color: #f9f9f9;
+}
+
+.trips-table-section h2 {
+    background-color: transparent;
+    color: var(--secondary-color);
+    padding: 0 0 16px 0;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    font-family: var(--body-font);
+}
+
+.trips-table th {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.trips-table td {
+    padding: 10px 12px;
+    color: var(--accent1-color);
+    border-bottom: 1px solid #ddd;
+    background-color: var(--primary-color);
+}
+
+.trips-table tbody tr:nth-child(even) td {
+    background-color: #f0f0f0;
+}
+
+.trips-table tbody tr:hover td {
+    background-color: #e0eeec;
+}
