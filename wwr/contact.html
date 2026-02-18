@@ -27,7 +27,7 @@
     <main>
         <!-- Company Info -->
         <div class="company-info">
-            <h1>Salmon River Experience</h1>
+            <h1 class="company-title">Salmon River Experience</h1>
             <p>123 River Road</p>
             <p>Salmon, Idaho 83467</p>
             <p>+1 208 555 0192</p>
@@ -47,22 +47,26 @@
             <form class="contact-form" action="#" method="get">
                 <div class="form-row">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Placeholder" required />
+                    <input type="text" id="name" name="name" placeholder="Enter your name"
+                      required />
                 </div>
 
                 <div class="form-row">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Placeholder"
+                    <input type="email" id="email" name="email" placeholder="Enter your email"
                       required />
                 </div>
                 <div class="form-row">
                     <span class="form-label">Message<br />Purpose</span>
                     <div class="radio-options">
-                        <label><input type="radio" name="purpose" value="general" required />
+                        <label><input type="radio" id="general" name="purpose" value="general"
+                              required />
                             General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation" />
+                        <label><input type="radio" id="reservation" name="purpose"
+                              value="reservation" />
                             Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="website" /> Website
+                        <label><input type="radio" id="website" name="purpose" value="website" />
+                            Website
                             Suggestion</label>
                     </div>
                 </div>
@@ -74,7 +78,7 @@
 
                 <div class="form-check">
                     <label>
-                        <input type="checkbox" name="newsletter" value="yes" />
+                        <input type="checkbox" name="newsletter" id="newsletter" value="yes" />
                         Please subscribe me to the monthly newsletter
                     </label>
                 </div>

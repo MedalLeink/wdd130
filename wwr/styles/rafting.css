@@ -61,7 +61,9 @@ nav ul li a {
     font-family: var(--body-font);
     font-size: 0.95rem;
     padding: 8px 18px;
-    transition: background-color 0.2s, color 0.2s;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
 }
 
 nav ul li a:hover,
@@ -256,19 +258,19 @@ footer p {
     padding: 20px 20px 12px;
 }
 
-.company-info h2 {
+.company-info p {
+    margin: 0;
+    padding: 1px 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--secondary-color);
+}
+
+.company-title {
     background-color: transparent;
     color: var(--secondary-color);
     font-size: 1.6rem;
     padding: 0 0 8px 0;
-}
-
-.company-info p {
-    margin: 0;
-    padding: 2px 0;
-    font-size: 0.95rem;
-    line-height: 1.7;
-    color: var(--secondary-color);
 }
 
 /* MAP + FORM: side by side */
@@ -278,7 +280,7 @@ footer p {
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
     padding: 16px 20px;
-    gap: 20px;
+    gap: 50px;
     min-height: 380px;
 }
 
@@ -303,7 +305,6 @@ footer p {
     display: grid;
     grid-template-columns: 100px 1fr;
     align-items: center;
-    gap: 8px;
 }
 
 .form-row label,
@@ -332,21 +333,21 @@ footer p {
 .radio-options {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 10px;
 }
 
 .radio-options label {
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--secondary-color);
     cursor: pointer;
 }
 
 .radio-options input[type="radio"] {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     accent-color: var(--accent1-color);
     cursor: pointer;
 }
@@ -383,7 +384,7 @@ footer p {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.88rem;
+    font-size: 0.8rem;
     color: var(--secondary-color);
     cursor: pointer;
 }
@@ -401,7 +402,7 @@ footer p {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: var(--body-font);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     border: 1px solid #bbb;
     cursor: pointer;
     border-radius: 4px;
@@ -462,4 +463,8 @@ footer p {
 .employee-gallery figcaption span {
     font-style: italic;
     font-size: 0.8rem;
+}
+
+main {
+    color: var(--secondary-color);
 }
