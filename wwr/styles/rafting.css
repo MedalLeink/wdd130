@@ -81,7 +81,6 @@ h2 {
 
 nav,
 p,
-section,
 article {
     margin: 16px;
     padding: 8px;
@@ -142,8 +141,11 @@ article {
     padding: 0 0 24px 0;
 }
 
-.history h2 {
+.history h2,
+.adventures h2 {
     padding: 20px 16px 12px;
+    background-color: transparent;
+    color: var(--secondary-color);
 }
 
 .history-content {
@@ -168,10 +170,6 @@ article {
 
 .adventures {
     padding: 0 0 24px 0;
-}
-
-.adventures h2 {
-    padding: 20px 16px 12px;
 }
 
 .adventure-gallery {
@@ -211,12 +209,14 @@ footer {
     align-items: center;
     padding: 14px 20px;
     width: var(--max-width);
+    background-color: var(--accent1-color);
 }
 
 footer p {
     font-size: 0.85rem;
     flex: 1;
     text-align: left;
+    color: var(--primary-color);
 }
 
 .socialmedia {
