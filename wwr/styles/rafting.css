@@ -111,7 +111,7 @@ article {
 .hero article {
     position: absolute;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--primary-color);
     opacity: 0.8;
     margin: 10px;
     bottom: 0;
