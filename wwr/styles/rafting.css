@@ -140,5 +140,8 @@ article {
 .hero article img {
     float: right;
     width: 180px;
+    height: 100px;
+    object-fit: cover;
     margin: 10px;
+    border-style: 1px solid #ccc;
 }
