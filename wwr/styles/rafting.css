@@ -42,6 +42,28 @@ header img {
     border-radius: 4px;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
