@@ -3,7 +3,7 @@
     --secondary-color: #000;
     --accent1-color: #264653;
     --accent2-color: #2a9d8f;
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --max-width: 840px;
 }
@@ -23,7 +23,7 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    width: var(--max-width);
     margin: 0 auto;
     background-color: var(--primary-color);
 }
@@ -31,6 +31,7 @@ footer {
 header {
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
     background-color: var(--accent1-color);
     padding: 12px 20px;
     gap: 20px;
@@ -49,19 +50,17 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    gap: 24px;
+    gap: 0;
     flex-wrap: wrap;
 }
 
 nav ul li a {
+    display: block;
     text-decoration: none;
     color: var(--primary-color);
     font-family: var(--body-font);
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 0.04em;
-    padding: 6px 10px;
-    border-radius: 4px;
+    font-size: 0.95rem;
+    padding: 8px 18px;
     transition: background-color 0.2s, color 0.2s;
 }
 
@@ -77,7 +76,7 @@ h2 {
     color: var(--primary-color);
     background-color: var(--accent1-color);
     text-align: center;
-    padding: 12px 16px;
+    padding: 14px 16px;
 }
 
 nav,
@@ -104,6 +103,7 @@ article {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .hero h1 {
@@ -114,7 +114,7 @@ article {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .hero article {
