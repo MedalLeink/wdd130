@@ -481,7 +481,6 @@ main {
     font-size: 2rem;
 }
 
-/* Newsletter Section */
 .newsletter {
     background-color: #f0f0f0;
     padding: 30px 20px;
@@ -559,7 +558,6 @@ main {
     background-color: var(--accent2-color);
 }
 
-/* Call to Action Section */
 .cta {
     background-color: var(--accent1-color);
     padding: 36px 20px;
@@ -599,7 +597,6 @@ main {
     color: var(--primary-color);
 }
 
-/* Offerings Section - CSS Grid */
 .offerings {
     padding: 30px 20px;
 }
@@ -655,11 +652,6 @@ main {
     padding: 0;
 }
 
-/* =====================
-   TRIPS PAGE ADDITIONS
-   ===================== */
-
-/* Page hero - not full image, just a styled heading block */
 .page-hero {
     background-color: var(--accent1-color);
     padding: 30px 20px;
@@ -681,7 +673,6 @@ main {
     opacity: 0.9;
 }
 
-/* Trips CTA bar */
 .trips-cta {
     background-color: #f0f0f0;
     padding: 16px 20px;
@@ -699,7 +690,6 @@ main {
     font-size: 0.95rem;
 }
 
-/* Trip cards - CSS Grid */
 .trips-section {
     padding: 24px 20px;
 }
