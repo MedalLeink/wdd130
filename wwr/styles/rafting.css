@@ -2,6 +2,7 @@
     --primary-color: #fff;
     --secondary-color: #000;
     --accent1-color: #264653;
+    --accent2-color: #2a9d8f;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --max-width: 840px;
@@ -62,6 +63,12 @@ nav ul li a {
     padding: 6px 10px;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
 }
 
 h1,
