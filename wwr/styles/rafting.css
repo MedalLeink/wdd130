@@ -129,6 +129,14 @@ article {
     gap: 14px;
 }
 
+.hero article p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    flex: 1;
+    letter-spacing: 0.6px;
+}
+
 .hero article img {
     float: right;
     width: 180px;
