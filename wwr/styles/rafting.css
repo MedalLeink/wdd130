@@ -250,3 +250,220 @@ footer p {
     object-fit: contain;
     display: block;
 }
+
+.company-info {
+    text-align: center;
+    padding: 24px 20px 16px;
+    color: var(--accent1-color);
+}
+
+.company-info h2 {
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 1.6rem;
+    padding: 0 0 10px 0;
+}
+
+.company-info p {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 16px 20px;
+    align-items: stretch;
+    min-height: 380px;
+}
+
+.contact-section iframe {
+    border: 1px solid var(--accent1-color);
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+}
+
+.contact-form {
+    padding: 0 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+    min-width: 80px;
+    padding-top: 8px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    flex: 1;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    font-family: var(--body-font);
+    border: 1px solid #aaa;
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--accent2-color);
+    border-color: var(--accent2-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.radio-group {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.radio-group legend {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+    min-width: 80px;
+    padding-top: 2px;
+    float: left;
+}
+
+.radio-group .radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.radio-group label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    font-size: 0.9rem;
+    min-width: unset;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent1-color);
+    cursor: pointer;
+}
+
+.checkbox-group {
+    align-items: center;
+}
+
+.checkbox-group label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    font-size: 0.88rem;
+    min-width: unset;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--accent1-color);
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    padding: 10px 28px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-left: 90px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+.employees {
+    padding: 0 0 24px 0;
+    background-color: #f0f0f0;
+    margin-top: 16px;
+}
+
+.employees h2 {
+    background-color: transparent;
+    color: var(--secondary-color);
+    padding: 20px 16px 12px;
+}
+
+.employee-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 16px 40px;
+    justify-content: center;
+}
+
+.employee-gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    max-width: 180px;
+}
+
+.employee-gallery figure img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+    background-color: #ccc;
+}
+
+.employee-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.88rem;
+    color: var(--accent1-color);
+    line-height: 1.4;
+}
+
+.employee-gallery figcaption span {
+    font-style: italic;
+    font-size: 0.8rem;
+}
