@@ -4,6 +4,7 @@
     --accent1-color: #264653;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
+    --max-width: 840px;
 }
 
 * {
@@ -23,8 +24,10 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--primary-color);
 }
+
+header.grid {}
 
 h1,
 h2 {
